@@ -1,0 +1,261 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*end reset css*/
+:root {
+    --main-bg-color: #0E0B00;
+    --main-cn-color: #1F1700;
+    --main-tl-color: #D2A203;
+    --main-tx-color: #926D00;
+    --secondary-tx-color: #5F4800;
+}
+
+* {
+    color: var(--main-tx-color);
+}
+
+#background {
+    background-color: #0A0A0A;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    border-radius: 2em;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    bottom: 1em;
+}
+
+h1 {
+    color: var(--main-tl-color);
+    font-weight: bold;
+}
+
+hr {
+    width: 100%;
+}
+
+h1 img {
+    width: 1em;
+    height: 1em;
+    float: right;
+}
+
+* {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+#information {
+    background-color: var(--main-cn-color);
+    flex-direction: column;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+span,
+h1 {
+    padding: 1em;
+}
+
+#skill-box {
+    flex-direction: row;
+    animation: entrada 2s;
+}
+
+#canvas {
+    animation: girar 2s;
+}
+
+@keyframes entrada {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #skill-box {
+        flex-direction: column;
+    }
+
+    #information {
+        width: 75%;
+        padding-bottom: 5em;
+    }
+
+    @keyframes entrada {
+        from {
+            transform: translateY(100%);
+        }
+
+        to {
+            transform: 0;
+        }
+    }
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
