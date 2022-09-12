@@ -24,7 +24,7 @@ function drawProfileRoulette() {
         //can.width = window.innerWidth * 3 / 4;
         //can.height = can.width;
         //drawRect(con, 0, can.height / 2, can.width, can.width / 2);
-        can.width = (window.innerWidth * 3) / 4;
+        can.width = window.innerWidth*3 / 7;
         can.height = can.width;
     }
     //drawCircle(con, can.width / 2, can.height / 2, (can.width) / 2, 0, Math.PI/2, '#5F4800');
