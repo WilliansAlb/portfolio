@@ -13,40 +13,69 @@
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="icon" type="image/svg" href="public/img/logo.svg" />
 </head>
+
 <body>
     <div id="background">
     </div>
-    <div class="container" id="skill-box">
-        <canvas id="canvas"></canvas>
-        <div class="container" id="information">
-            <h1>Willians López<img src="public/img/logo.svg" alt="logo"></h1>
-            <hr>
-            <span>Ingeniero en Sistemas. 24 años. Desarrollador Java Senior</span>
-            <br>
-            <span>He desarrollado aplicaciones desde la recopilación de los requerimientos, hasta la parte del
-                mantenimiento en producción de las mismas. Cuento con bastos conocimientos acerca de base de datos
-                relacionales y no relacionales.</span>
-                <br>
-            <div id="technologies">
-                <img src="public/img/java.gif" alt="gif de java" width="50px">
-                <img src="public/img/js.png" alt="gif de java" width="50px">
-                <img src="public/img/angular.png" alt="gif de java" width="50px">
-                <img src="public/img/html.png" alt="gif de java" width="50px">
-                <img src="public/img/css.png" alt="gif de java" width="50px">
-                <img src="public/img/ts.png" alt="gif de java" width="50px">
-                <img src="public/img/mysql.png" alt="gif de java" width="50px">
-                <img src="public/img/sass.png" alt="gif de java" width="50px">
-                <img src="public/img/spring.png" alt="gif de java" width="50px">
-                <img src="public/img/jasperreports.png" alt="gif de java" width="50px">
-                <img src="public/img/postgresql.png" alt="gif de java" width="50px">
-                <img src="public/img/php.png" alt="gif de java" width="50px">
-                <img src="public/img/nodejs.png" alt="gif de java" width="50px">
-                <img src="public/img/pug.png" alt="gif de java" width="50px">
-                <img src="public/img/git.png" alt="gif de java" width="50px">
+    <div class="container">
+        <div id="display">
+            <canvas id="canvas"></canvas>
+            <div id="information">
+                <h1 id="name">Willians López<img src="public/img/logo.svg" alt="logo"></h1>
+                <span>Ingeniero en Sistemas. 24 años.</span>
+                <p>He desarrollado aplicaciones desde la recopilación de los requerimientos, hasta el
+                    mantenimiento de las mismas. Cuento con bastos conocimientos de las siguientes tecnologías:</p>
+                <div id="technologies">
+                    <span class="hovertext" data-hover="Java">
+                        <img src="public/img/java.gif" alt="Java">
+                    </span>
+                    <span class="hovertext" data-hover="Javascript">
+                        <img src="public/img/js.png" alt="Javascript">
+                    </span>
+                    <span class="hovertext" data-hover="Angular">
+                        <img src="public/img/angular.png" alt="Angular">
+                    </span>
+                    <span class="hovertext" data-hover="HTML">
+                        <img src="public/img/html.png" alt="HTML" >
+                    </span>
+                    <span class="hovertext" data-hover="CSS">
+                        <img src="public/img/css.png" alt="CSS" >
+                    </span>
+                    <span class="hovertext" data-hover="Typescript">
+                        <img src="public/img/ts.png" alt="Typescript" >
+                    </span>
+                    <span class="hovertext" data-hover="MySQL">
+                        <img src="public/img/mysql.png" alt="MYSQL" >
+                    </span>
+                    <span class="hovertext" data-hover="SASS">
+                        <img src="public/img/sass.png" alt="SASS" >
+                    </span>
+                    <span class="hovertext" data-hover="Spring">
+                        <img src="public/img/spring.png" alt="Spring" >
+                    </span>
+                    <span class="hovertext" data-hover="JasperReports">
+                        <img src="public/img/jasperreports.png" alt="JasperReports" >
+                    </span>
+                    <span class="hovertext" data-hover="PostgreSQL">
+                        <img src="public/img/postgresql.png" alt="PostgreSQL" >
+                    </span>
+                    <span class="hovertext" data-hover="PHP">
+                        <img src="public/img/php.png" alt="PHP" >
+                    </span>
+                    <span class="hovertext" data-hover="Node.js">
+                        <img src="public/img/nodejs.png" alt="Node.js" >
+                    </span>
+                    <span class="hovertext" data-hover="Pugjs">
+                        <img src="public/img/pug.png" alt="Pugjs" >
+                    </span>
+                    <span class="hovertext" data-hover="Git">
+                        <img src="public/img/git.png" alt="Git" >
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-    <footer style="display: flex;position: fixed;z-index: 100;">Coding for Willians López</footer>
     <script src="public/js/scripts.js"></script>
 </body>
+
 </html>
