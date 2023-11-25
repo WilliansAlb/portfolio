@@ -186,11 +186,11 @@ table {
     animation: entrada 3s;
     flex-direction: row;
 }
-
+/**
 body {
     display: flex;
     justify-content: center;
-}
+}*/
 
 footer {
     display: flex;
@@ -291,7 +291,7 @@ h1 {
     }
 
     #information {
-        width: 75%;
+        width: 80%;
         padding-bottom: 1em;
         padding-right: 0;
     }
@@ -310,13 +310,15 @@ h1 {
         width: 100%;
         height: 100%;
         border-radius: 0;
+        align-items: center;
     }
 
     #display{
+        height: fit-content;
         animation: none;
         flex-direction: column;
-        justify-content: flex-start;
-        overflow: auto;
+        justify-content: center;
+        /**overflow: auto;**/
     }
 
     /**
